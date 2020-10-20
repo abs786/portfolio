@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burair.com</title>
+    <link id="stylesheet" rel="stylesheet" href="light.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Asap&family=Titillium+Web:wght@200&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=EB+Garamond&family=Open+Sans+Condensed:ital,wght@1,300&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav-bar">
+            <ul>
+                <li data-bounce="introo"><a id="introo" href="#intro">Intro</a></li>
+                <hr>
+                <li data-bounce="experiences"><a id="experiences" href="#experience">Experience</a></li>
+                <hr>
+                <li data-bounce="skillss"><a id="skillss" href="#skills">Skills</a></li>
+                <hr>
+                <li data-bounce="projectss"><a id="projectss" href="#projects">Projects</a></li>
+                <hr>
+                <li data-bounce="aboutt"><a id="aboutt" href="#about">About</a></li>
+            </ul>
+        </div>
+        <button onclick="toggleMode('dark.css','dark')" class="btn" id="btn">
+            <div class="ripple ripple--dark"></div>
+            <div class="ripple ripple--light"></div>
+
+            <div class="toggle toggle--dark"></div>
+            <div class="toggle toggle--light"></div>
+        </button>
+    </div>
+    <div class="Titles">
+        <a id="intro"></a>
+        <h4 id="title-1">My name is,</h4>
+        <h1 id="title-2" class="animate__animated animate__lightSpeedInRight">Burair Abbas</h1>
+        <h1 id="title-3">I'm a <span>Frontend Web Developer</span> building cool stuff.</h1>
+        <p id="title-4">I'm a self-taught frontend software engineer. I'm 22 years old. I live in India.
+            I like building (and designing ) exceptional websites, applications, and everything in between. I speak
+            fluently 🇮🇳 & 🇬🇧.</p>
+    </div>
+    <div class="scroll">
+        <div class="chevron"></div>
+        <div class="chevron"></div>
+        <div class="chevron"></div>
+        Scroll Down
+    </div>
+    <a id="experience"></a>
+    <div class="experience">
+        <h1>Experience</h1>
+        <hr>
+    </div>
+    <div class="exp-main">
+        <div class="exp-list">
+            <ul>
+                <button class="tablink active animate__animated animate__slideInDown"
+                    onclick="changeTab(event, 'web-developer')">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg" class="StyledIconBase-ea9ulj-0 duvCfz">
+                        <path
+                            d="M5.536 21.886a1.004 1.004 0 001.033-.064l13-9a1 1 0 000-1.644l-13-9A.998.998 0 005 3v18a1 1 0 00.536.886zM7 4.909L17.243 12 7 19.091V4.909z">
+                        </path>
+                    </svg> Frontend Web Developer</button><br>
+                <button class="tablink animate__animated animate__slideInDown"
+                    onclick="changeTab(event, 'web-engineer')"><svg viewBox="0 0 24 24" aria-hidden="true"
+                        focusable="false" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                        class="StyledIconBase-ea9ulj-0 duvCfz">
+                        <path
+                            d="M5.536 21.886a1.004 1.004 0 001.033-.064l13-9a1 1 0 000-1.644l-13-9A.998.998 0 005 3v18a1 1 0 00.536.886zM7 4.909L17.243 12 7 19.091V4.909z">
+                        </path>
+                    </svg> Web Engineer</button><br>
+                <button class="tablink animate__animated animate__slideInDown"
+                    onclick="changeTab(event, 'media-manager')"><svg viewBox="0 0 24 24" aria-hidden="true"
+                        focusable="false" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                        class="StyledIconBase-ea9ulj-0 duvCfz">
+                        <path
+                            d="M5.536 21.886a1.004 1.004 0 001.033-.064l13-9a1 1 0 000-1.644l-13-9A.998.998 0 005 3v18a1 1 0 00.536.886zM7 4.909L17.243 12 7 19.091V4.909z">
+                        </path>
+                    </svg> Social Media Manager</button><br>
+                <button class="tablink animate__animated animate__slideInDown"
+                    onclick="changeTab(event, 'assistant-accountant')"><svg viewBox="0 0 24 24" aria-hidden="true"
+                        focusable="false" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                        class="StyledIconBase-ea9ulj-0 duvCfz">
+                        <path
+                            d="M5.536 21.886a1.004 1.004 0 001.033-.064l13-9a1 1 0 000-1.644l-13-9A.998.998 0 005 3v18a1 1 0 00.536.886zM7 4.909L17.243 12 7 19.091V4.909z">
+                        </path>
+                    </svg> Assistant Accountant</button>
+            </ul>
+        </div>
+        <div id="web-developer" class="exp-info show animate__animated animate__fadeIn">
+            <ul>
+                <h1>@Sociallygeeks</h1>
+                <h3>Jan 2019-Dec 2019</h3>
+                <li>
+                    <p>My work in Socially geeks was to Develop and Design Websites for thier clients</p>
+                </li>
+                <li>
+                    <p>My role in the company was of frontend web developer responsible for the frontend design part of
+                        the websites</p>
+                </li>
+                <li>Handling the different design aspects of the website and develop beautiful looking website with the
+                    help of different technologies
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div id="web-engineer" class="exp-info animate__animated animate__fadeIn">
+            <ul>
+                <h1>@engineer</h1>
+                <h3>Jan 2019-Dec 2019</h3>
+                <li>
+                    <p>My work in Socially geeks was to Develop and Design Websites for thier clients</p>
+                </li>
+                <li>
+                    <p>My role in the company was of frontend web developer responsible for the frontend design part of
+                        the websites</p>
+                </li>
+                <li>Handling the different design aspects of the website and develop beautiful looking website with the
+                    help of different technologies
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div id="media-manager" class="exp-info animate__animated animate__fadeIn">
+            <ul>
+                <h1>@Manager</h1>
+                <h3>Jan 2019-Dec 2019</h3>
+                <li>
+                    <p>My work in Socially geeks was to Develop and Design Websites for thier clients</p>
+                </li>
+                <li>
+                    <p>My role in the company was of frontend web developer responsible for the frontend design part of
+                        the websites</p>
+                </li>
+                <li>Handling the different design aspects of the website and develop beautiful looking website with the
+                    help of different technologies
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div id="assistant-accountant" class="exp-info animate__animated animate__fadeIn">
+            <ul>
+                <h1>@Accountant</h1>
+                <h3>Jan 2019-Dec 2019</h3>
+                <li>
+                    <p>My work in Socially geeks was to Develop and Design Websites for thier clients</p>
+                </li>
+                <li>
+                    <p>My role in the company was of frontend web developer responsible for the frontend design part of
+                        the websites</p>
+                </li>
+                <li>Handling the different design aspects of the website and develop beautiful looking website with the
+                    help of different technologies
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <a id="skills"></a>
+    <div class="skills">
+        <h1>Skills</h1>
+        <hr>
+    </div>
+    <div class="skill-lists">
+        <div class="skill-list1">
+            <p class="pink">#HTML5</p>
+            <p>#GIT</p>
+            <p class="pink">#Jquery</p>
+            <p>#Material</p>
+        </div>
+        <div class="skill-list2">
+            <p>#Bulma</p>
+            <p class="pink">#CSS</p>
+            <p>#Tailwind</p>
+            <a id="projects"></a>
+            <p class="pink">#Bootstrap</p>
+        </div>
+        <div class="skill-list3">
+            <p class="pink">#Javascript</p>
+            <p>#C</p>
+            <p class="pink">#Database</p>
+            <p>#API</p>
+        </div>
+        <div class="uni-details">
+            <details>
+                <summary><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg" class="StyledIconBase-ea9ulj-0 duvCfz">
+                        <path
+                            d="M5.536 21.886a1.004 1.004 0 001.033-.064l13-9a1 1 0 000-1.644l-13-9A.998.998 0 005 3v18a1 1 0 00.536.886zM7 4.909L17.243 12 7 19.091V4.909z">
+                        </path>
+                    </svg>University of Mumbai <img class="flag" width="12%" height="12%" src="flag india.svg.png"></summary>
+                <p>Bachelor of Commerce(Banking and Insurance)<br>(2015-2019)-Mumbai</p>
+            </details>
+            <details>
+                <summary><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg" class="StyledIconBase-ea9ulj-0 duvCfz">
+                        <path
+                            d="M5.536 21.886a1.004 1.004 0 001.033-.064l13-9a1 1 0 000-1.644l-13-9A.998.998 0 005 3v18a1 1 0 00.536.886zM7 4.909L17.243 12 7 19.091V4.909z">
+                        </path>
+                    </svg>Suresh Gyan Vihar University <img class="flag" width="12%" height="12%" src="flag india.svg.png">
+                </summary>
+                <p>Master Of Computer Applications<br>(2020-2023)-Jaipur</p>
+            </details>
+        </div>
+    </div>
+    <div class="projects">
+        <h1>My Projects</h1>
+        <hr>
+    </div>
+    <div class="project-buttons">
+        <button class="btn-active">Beginner</button>
+        <button>Advanced</button>
+    </div>
+    <div class="beginner-projects-all">
+        <div class="single-project">
+            <div class="project-links">
+                <a href="https://github.com/Achiaga/myBurgerApp" target="_blank" rel="noopener noreferrer">
+                    <div class="sc-oefIU bfsfLR" style="color: rgb(30, 30, 30); transform: none;"><svg
+                            viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg" class="StyledIconBase-ea9ulj-0 duvCfz">
+                            <path fill-rule="evenodd"
+                                d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 012.496-.336 9.554 9.554 0 012.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"
+                                clip-rule="evenodd"></path>
+                        </svg></div>
+                </a><a href="https://react-burger-app-maker.firebaseapp.com/" target="_blank" rel="noopener noreferrer">
+                    <div class="sc-oefIU bfsfLR" style="color: rgb(30, 30, 30); transform: none;"><svg
+                            viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg" class="StyledIconBase-ea9ulj-0 duvCfz">
+                            <g data-name="Layer 2">
+                                <g data-name="external-link">
+                                    <path
+                                        d="M20 11a1 1 0 00-1 1v6a1 1 0 01-1 1H6a1 1 0 01-1-1V6a1 1 0 011-1h6a1 1 0 000-2H6a3 3 0 00-3 3v12a3 3 0 003 3h12a3 3 0 003-3v-6a1 1 0 00-1-1z">
+                                    </path>
+                                    <path
+                                        d="M16 5h1.58l-6.29 6.28a1 1 0 000 1.42 1 1 0 001.42 0L19 6.42V8a1 1 0 001 1 1 1 0 001-1V4a1 1 0 00-1-1h-4a1 1 0 000 2z">
+                                    </path>
+                                </g>
+                            </g>
+                        </svg></div>
+                </a>
+            </div>
+            <div class="project-img">
+                <img src="https://achiaga.now.sh/static/media/burger-app.ac5d38f7.png" alt="burger-app">
+            </div>
+            <div class="project-content">
+                <h4>BurgerApp</h4>
+                <p>My first project in Reactjs from an online bootcamp. It is a web where you
+                    can make your own burguer and purchase it.</p>
+                <div class="tag1">
+                    <span><span class="pink">#</span>React&nbsp;</span>
+                    <span><span class="pink">#</span>Redux&nbsp;</span>
+                    <span><span class="pink">#</span>graphql&nbsp;</span>
+                </div>
+                <div class="tag2">
+                    <span><span class="pink">#</span>Firebase&nbsp;</span>
+                    <span><span class="pink">#</span>Material-ui&nbsp;</span>
+                </div>
+            </div>
+        </div>
+        <div class="single-project">
+            <div class="project-links">
+                <a href="https://github.com/Achiaga/myBurgerApp" target="_blank" rel="noopener noreferrer">
+                    <div class="sc-oefIU bfsfLR" style="color: rgb(30, 30, 30); transform: none;"><svg
+                            viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg" class="StyledIconBase-ea9ulj-0 duvCfz">
+                            <path fill-rule="evenodd"
+                                d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 012.496-.336 9.554 9.554 0 012.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"
+                                clip-rule="evenodd"></path>
+                        </svg></div>
+                </a><a href="https://react-burger-app-maker.firebaseapp.com/" target="_blank" rel="noopener noreferrer">
+                    <div class="sc-oefIU bfsfLR" style="color: rgb(30, 30, 30); transform: none;"><svg
+                            viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg" class="StyledIconBase-ea9ulj-0 duvCfz">
+                            <g data-name="Layer 2">
+                                <g data-name="external-link">
+                                    <path
+                                        d="M20 11a1 1 0 00-1 1v6a1 1 0 01-1 1H6a1 1 0 01-1-1V6a1 1 0 011-1h6a1 1 0 000-2H6a3 3 0 00-3 3v12a3 3 0 003 3h12a3 3 0 003-3v-6a1 1 0 00-1-1z">
+                                    </path>
+                                    <path
+                                        d="M16 5h1.58l-6.29 6.28a1 1 0 000 1.42 1 1 0 001.42 0L19 6.42V8a1 1 0 001 1 1 1 0 001-1V4a1 1 0 00-1-1h-4a1 1 0 000 2z">
+                                    </path>
+                                </g>
+                            </g>
+                        </svg></div>
+                </a>
+            </div>
+            <div class="project-img">
+                <img src="https://achiaga.now.sh/static/media/burger-app.ac5d38f7.png" alt="burger-app">
+            </div>
+            <div class="project-content">
+                <h4>BurgerApp</h4>
+                <p>My first project in Reactjs from an online bootcamp. It is a web where you
+                    can make your own burguer and purchase it.</p>
+                <div class="tag1">
+                    <span><span class="pink">#</span>React&nbsp;</span>
+                    <span><span class="pink">#</span>Redux&nbsp;</span>
+                    <span><span class="pink">#</span>graphql&nbsp;</span>
+                </div>
+                <div class="tag2">
+                    <span><span class="pink">#</span>Firebase&nbsp;</span>
+                    <span><span class="pink">#</span>Material-ui&nbsp;</span>
+                </div>
+            </div>
+        </div>
+        <div class="single-project">
+            <div class="project-links">
+                <a href="https://github.com/Achiaga/myBurgerApp" target="_blank" rel="noopener noreferrer">
+                    <div class="sc-oefIU bfsfLR" style="color: rgb(30, 30, 30); transform: none;"><svg
+                            viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg" class="StyledIconBase-ea9ulj-0 duvCfz">
+                            <path fill-rule="evenodd"
+                                d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 012.496-.336 9.554 9.554 0 012.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"
+                                clip-rule="evenodd"></path>
+                        </svg></div>
+                </a><a href="https://react-burger-app-maker.firebaseapp.com/" target="_blank" rel="noopener noreferrer">
+                    <div class="sc-oefIU bfsfLR" style="color: rgb(30, 30, 30); transform: none;"><svg
+                            viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg" class="StyledIconBase-ea9ulj-0 duvCfz">
+                            <g data-name="Layer 2">
+                                <g data-name="external-link">
+                                    <path
+                                        d="M20 11a1 1 0 00-1 1v6a1 1 0 01-1 1H6a1 1 0 01-1-1V6a1 1 0 011-1h6a1 1 0 000-2H6a3 3 0 00-3 3v12a3 3 0 003 3h12a3 3 0 003-3v-6a1 1 0 00-1-1z">
+                                    </path>
+                                    <path
+                                        d="M16 5h1.58l-6.29 6.28a1 1 0 000 1.42 1 1 0 001.42 0L19 6.42V8a1 1 0 001 1 1 1 0 001-1V4a1 1 0 00-1-1h-4a1 1 0 000 2z">
+                                    </path>
+                                </g>
+                            </g>
+                        </svg></div>
+                </a>
+            </div>
+            <div class="project-img">
+                <img src="https://achiaga.now.sh/static/media/burger-app.ac5d38f7.png" alt="burger-app">
+            </div>
+            <div class="project-content">
+                <h4>BurgerApp</h4>
+                <p>My first project in Reactjs from an online bootcamp. It is a web where you
+                    can make your own burguer and purchase it.</p>
+                <div class="tag1">
+                    <span><span class="pink">#</span>React&nbsp;</span>
+                    <span><span class="pink">#</span>Redux&nbsp;</span>
+                    <span><span class="pink">#</span>graphql&nbsp;</span>
+                </div>
+                <div class="tag2">
+                    <span><span class="pink">#</span>Firebase&nbsp;</span>
+                    <span><span class="pink">#</span>Material-ui&nbsp;</span>
+                </div>
+            </div>
+        </div>
+        <div class="single-project">
+            <div class="project-links">
+                <a href="https://github.com/Achiaga/myBurgerApp" target="_blank" rel="noopener noreferrer">
+                    <div class="sc-oefIU bfsfLR" style="color: rgb(30, 30, 30); transform: none;"><svg
+                            viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg" class="StyledIconBase-ea9ulj-0 duvCfz">
+                            <path fill-rule="evenodd"
+                                d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 012.496-.336 9.554 9.554 0 012.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"
+                                clip-rule="evenodd"></path>
+                        </svg></div>
+                </a><a href="https://react-burger-app-maker.firebaseapp.com/" target="_blank" rel="noopener noreferrer">
+                    <div class="sc-oefIU bfsfLR" style="color: rgb(30, 30, 30); transform: none;"><svg
+                            viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg" class="StyledIconBase-ea9ulj-0 duvCfz">
+                            <g data-name="Layer 2">
+                                <g data-name="external-link">
+                                    <path
+                                        d="M20 11a1 1 0 00-1 1v6a1 1 0 01-1 1H6a1 1 0 01-1-1V6a1 1 0 011-1h6a1 1 0 000-2H6a3 3 0 00-3 3v12a3 3 0 003 3h12a3 3 0 003-3v-6a1 1 0 00-1-1z">
+                                    </path>
+                                    <path
+                                        d="M16 5h1.58l-6.29 6.28a1 1 0 000 1.42 1 1 0 001.42 0L19 6.42V8a1 1 0 001 1 1 1 0 001-1V4a1 1 0 00-1-1h-4a1 1 0 000 2z">
+                                    </path>
+                                </g>
+                            </g>
+                        </svg></div>
+                </a>
+            </div>
+            <div class="project-img">
+                <img src="https://achiaga.now.sh/static/media/burger-app.ac5d38f7.png" alt="burger-app">
+            </div>
+            <div class="project-content">
+                <h4>BurgerApp</h4>
+                <p>My first project in Reactjs from an online bootcamp. It is a web where you
+                    can make your own burguer and purchase it.</p>
+                <div class="tag1">
+                    <span><span class="pink">#</span>React&nbsp;</span>
+                    <span><span class="pink">#</span>Redux&nbsp;</span>
+                    <span><span class="pink">#</span>graphql&nbsp;</span>
+                </div>
+                <div class="tag2">
+                    <span><span class="pink">#</span>Firebase&nbsp;</span>
+                    <span><span class="pink">#</span>Material-ui&nbsp;</span>
+                </div>
+            </div>
+        </div>
+        <div class="single-project">
+            <div class="project-links">
+                <a href="https://github.com/Achiaga/myBurgerApp" target="_blank" rel="noopener noreferrer">
+                    <div class="sc-oefIU bfsfLR" style="color: rgb(30, 30, 30); transform: none;"><svg
+                            viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg" class="StyledIconBase-ea9ulj-0 duvCfz">
+                            <path fill-rule="evenodd"
+                                d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 012.496-.336 9.554 9.554 0 012.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"
+                                clip-rule="evenodd"></path>
+                        </svg></div>
+                </a><a href="https://react-burger-app-maker.firebaseapp.com/" target="_blank" rel="noopener noreferrer">
+                    <div class="sc-oefIU bfsfLR" style="color: rgb(30, 30, 30); transform: none;"><svg
+                            viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg" class="StyledIconBase-ea9ulj-0 duvCfz">
+                            <g data-name="Layer 2">
+                                <g data-name="external-link">
+                                    <path
+                                        d="M20 11a1 1 0 00-1 1v6a1 1 0 01-1 1H6a1 1 0 01-1-1V6a1 1 0 011-1h6a1 1 0 000-2H6a3 3 0 00-3 3v12a3 3 0 003 3h12a3 3 0 003-3v-6a1 1 0 00-1-1z">
+                                    </path>
+                                    <path
+                                        d="M16 5h1.58l-6.29 6.28a1 1 0 000 1.42 1 1 0 001.42 0L19 6.42V8a1 1 0 001 1 1 1 0 001-1V4a1 1 0 00-1-1h-4a1 1 0 000 2z">
+                                    </path>
+                                </g>
+                            </g>
+                        </svg></div>
+                </a>
+            </div>
+            <div class="project-img">
+                <img src="https://achiaga.now.sh/static/media/burger-app.ac5d38f7.png" alt="burger-app">
+            </div>
+            <div class="project-content">
+                <h4>BurgerApp</h4>
+                <p>My first project in Reactjs from an online bootcamp. It is a web where you
+                    can make your own burguer and purchase it.</p>
+                <div class="tag1">
+                    <span><span class="pink">#</span>React&nbsp;</span>
+                    <span><span class="pink">#</span>Redux&nbsp;</span>
+                    <span><span class="pink">#</span>graphql&nbsp;</span>
+                </div>
+                <div class="tag2">
+                    <span><span class="pink">#</span>Firebase&nbsp;</span>
+                    <span><span class="pink">#</span>Material-ui&nbsp;</span>
+                </div>
+            </div>
+        </div>
+        <div class="single-project">
+            <div class="project-links">
+                <a href="https://github.com/Achiaga/myBurgerApp" target="_blank" rel="noopener noreferrer">
+                    <div class="sc-oefIU bfsfLR" style="color: rgb(30, 30, 30); transform: none;"><svg
+                            viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg" class="StyledIconBase-ea9ulj-0 duvCfz">
+                            <path fill-rule="evenodd"
+                                d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 012.496-.336 9.554 9.554 0 012.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"
+                                clip-rule="evenodd"></path>
+                        </svg></div>
+                </a><a href="https://react-burger-app-maker.firebaseapp.com/" target="_blank" rel="noopener noreferrer">
+                    <div class="sc-oefIU bfsfLR" style="color: rgb(30, 30, 30); transform: none;"><svg
+                            viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg" class="StyledIconBase-ea9ulj-0 duvCfz">
+                            <g data-name="Layer 2">
+                                <g data-name="external-link">
+                                    <path
+                                        d="M20 11a1 1 0 00-1 1v6a1 1 0 01-1 1H6a1 1 0 01-1-1V6a1 1 0 011-1h6a1 1 0 000-2H6a3 3 0 00-3 3v12a3 3 0 003 3h12a3 3 0 003-3v-6a1 1 0 00-1-1z">
+                                    </path>
+                                    <path
+                                        d="M16 5h1.58l-6.29 6.28a1 1 0 000 1.42 1 1 0 001.42 0L19 6.42V8a1 1 0 001 1 1 1 0 001-1V4a1 1 0 00-1-1h-4a1 1 0 000 2z">
+                                    </path>
+                                </g>
+                            </g>
+                        </svg></div>
+                </a>
+            </div>
+            <div class="project-img">
+                <img src="https://achiaga.now.sh/static/media/burger-app.ac5d38f7.png" alt="burger-app">
+            </div>
+            <div class="project-content">
+                <h4>BurgerApp</h4>
+                <p>My first project in Reactjs from an online bootcamp. It is a web where you
+                    can make your own burguer and purchase it.</p>
+                <div class="tag1">
+                    <span><span class="pink">#</span>React&nbsp;</span>
+                    <span><span class="pink">#</span>Redux&nbsp;</span>
+                    <span><span class="pink">#</span>graphql&nbsp;</span>
+                </div>
+                <div class="tag2">
+                    <span><span class="pink">#</span>Firebase&nbsp;</span>
+                    <span><span class="pink">#</span>Material-ui&nbsp;</span>
+                </div>
+            </div>
+        </div>
+        <div class="single-project">
+            <div class="project-links">
+                <a href="https://github.com/Achiaga/myBurgerApp" target="_blank" rel="noopener noreferrer">
+                    <div class="sc-oefIU bfsfLR" style="color: rgb(30, 30, 30); transform: none;"><svg
+                            viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg" class="StyledIconBase-ea9ulj-0 duvCfz">
+                            <path fill-rule="evenodd"
+                                d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 012.496-.336 9.554 9.554 0 012.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"
+                                clip-rule="evenodd"></path>
+                        </svg></div>
+                </a><a href="https://react-burger-app-maker.firebaseapp.com/" target="_blank" rel="noopener noreferrer">
+                    <div class="sc-oefIU bfsfLR" style="color: rgb(30, 30, 30); transform: none;"><svg
+                            viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg" class="StyledIconBase-ea9ulj-0 duvCfz">
+                            <g data-name="Layer 2">
+                                <g data-name="external-link">
+                                    <path
+                                        d="M20 11a1 1 0 00-1 1v6a1 1 0 01-1 1H6a1 1 0 01-1-1V6a1 1 0 011-1h6a1 1 0 000-2H6a3 3 0 00-3 3v12a3 3 0 003 3h12a3 3 0 003-3v-6a1 1 0 00-1-1z">
+                                    </path>
+                                    <path
+                                        d="M16 5h1.58l-6.29 6.28a1 1 0 000 1.42 1 1 0 001.42 0L19 6.42V8a1 1 0 001 1 1 1 0 001-1V4a1 1 0 00-1-1h-4a1 1 0 000 2z">
+                                    </path>
+                                </g>
+                            </g>
+                        </svg></div>
+                </a>
+            </div>
+            <div class="project-img">
+                <img src="https://achiaga.now.sh/static/media/burger-app.ac5d38f7.png" alt="burger-app">
+            </div>
+            <div class="project-content">
+                <h4>BurgerApp</h4>
+                <p>My first project in Reactjs from an online bootcamp. It is a web where you
+                    can make your own burguer and purchase it.</p>
+                <div class="tag1">
+                    <span><span class="pink">#</span>React&nbsp;</span>
+                    <span><span class="pink">#</span>Redux&nbsp;</span>
+                    <span><span class="pink">#</span>graphql&nbsp;</span>
+                </div>
+                <div class="tag2">
+                    <span><span class="pink">#</span>Firebase&nbsp;</span>
+                    <span><span class="pink">#</span>Material-ui&nbsp;</span>
+                </div>
+            </div>
+        </div>
+        <div class="single-project">
+            <div class="project-links">
+                <a href="https://github.com/Achiaga/myBurgerApp" target="_blank" rel="noopener noreferrer">
+                    <div class="sc-oefIU bfsfLR" style="color: rgb(30, 30, 30); transform: none;"><svg
+                            viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg" class="StyledIconBase-ea9ulj-0 duvCfz">
+                            <path fill-rule="evenodd"
+                                d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 012.496-.336 9.554 9.554 0 012.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"
+                                clip-rule="evenodd"></path>
+                        </svg></div>
+                </a><a href="https://react-burger-app-maker.firebaseapp.com/" target="_blank" rel="noopener noreferrer">
+                    <div class="sc-oefIU bfsfLR" style="color: rgb(30, 30, 30); transform: none;"><svg
+                            viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg" class="StyledIconBase-ea9ulj-0 duvCfz">
+                            <g data-name="Layer 2">
+                                <g data-name="external-link">
+                                    <path
+                                        d="M20 11a1 1 0 00-1 1v6a1 1 0 01-1 1H6a1 1 0 01-1-1V6a1 1 0 011-1h6a1 1 0 000-2H6a3 3 0 00-3 3v12a3 3 0 003 3h12a3 3 0 003-3v-6a1 1 0 00-1-1z">
+                                    </path>
+                                    <path
+                                        d="M16 5h1.58l-6.29 6.28a1 1 0 000 1.42 1 1 0 001.42 0L19 6.42V8a1 1 0 001 1 1 1 0 001-1V4a1 1 0 00-1-1h-4a1 1 0 000 2z">
+                                    </path>
+                                </g>
+                            </g>
+                        </svg></div>
+                </a>
+            </div>
+            <div class="project-img">
+                <img src="https://achiaga.now.sh/static/media/burger-app.ac5d38f7.png" alt="burger-app">
+            </div>
+            <div class="project-content">
+                <h4>BurgerApp</h4>
+                <p>My first project in Reactjs from an online bootcamp. It is a web where you
+                    can make your own burguer and purchase it.</p>
+                <div class="tag1">
+                    <span><span class="pink">#</span>React&nbsp;</span>
+                    <span><span class="pink">#</span>Redux&nbsp;</span>
+                    <span><span class="pink">#</span>graphql&nbsp;</span>
+                </div>
+                <div class="tag2">
+                    <span><span class="pink">#</span>Firebase&nbsp;</span>
+                    <span><span class="pink">#</span>Material-ui&nbsp;</span>
+                </div>
+            </div>
+        </div>
+        <div class="single-project">
+            <div class="project-links">
+                <a href="https://github.com/Achiaga/myBurgerApp" target="_blank" rel="noopener noreferrer">
+                    <div class="sc-oefIU bfsfLR" style="color: rgb(30, 30, 30); transform: none;"><svg
+                            viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg" class="StyledIconBase-ea9ulj-0 duvCfz">
+                            <path fill-rule="evenodd"
+                                d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 012.496-.336 9.554 9.554 0 012.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"
+                                clip-rule="evenodd"></path>
+                        </svg></div>
+                </a><a href="https://react-burger-app-maker.firebaseapp.com/" target="_blank" rel="noopener noreferrer">
+                    <div class="sc-oefIU bfsfLR" style="color: rgb(30, 30, 30); transform: none;"><svg
+                            viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg" class="StyledIconBase-ea9ulj-0 duvCfz">
+                            <g data-name="Layer 2">
+                                <g data-name="external-link">
+                                    <path
+                                        d="M20 11a1 1 0 00-1 1v6a1 1 0 01-1 1H6a1 1 0 01-1-1V6a1 1 0 011-1h6a1 1 0 000-2H6a3 3 0 00-3 3v12a3 3 0 003 3h12a3 3 0 003-3v-6a1 1 0 00-1-1z">
+                                    </path>
+                                    <path
+                                        d="M16 5h1.58l-6.29 6.28a1 1 0 000 1.42 1 1 0 001.42 0L19 6.42V8a1 1 0 001 1 1 1 0 001-1V4a1 1 0 00-1-1h-4a1 1 0 000 2z">
+                                    </path>
+                                </g>
+                            </g>
+                        </svg></div>
+                </a>
+            </div>
+            <div class="project-img">
+                <img src="https://achiaga.now.sh/static/media/burger-app.ac5d38f7.png" alt="burger-app">
+            </div>
+            <div class="project-content">
+                <h4>BurgerApp</h4>
+                <p>My first project in Reactjs from an online bootcamp. It is a web where you
+                    can make your own burguer and purchase it.</p>
+                <div class="tag1">
+                    <span><span class="pink">#</span>React&nbsp;</span>
+                    <span><span class="pink">#</span>Redux&nbsp;</span>
+                    <span><span class="pink">#</span>graphql&nbsp;</span>
+                </div>
+                <div class="tag2">
+                    <span><span class="pink">#</span>Firebase&nbsp;</span>
+                    <span><span class="pink">#</span>Material-ui&nbsp;</span>
+                </div>
+            </div>
+        </div>
+        <div class="single-project">
+            <div class="project-links">
+                <a href="https://github.com/Achiaga/myBurgerApp" target="_blank" rel="noopener noreferrer">
+                    <div class="sc-oefIU bfsfLR" style="color: rgb(30, 30, 30); transform: none;"><svg
+                            viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg" class="StyledIconBase-ea9ulj-0 duvCfz">
+                            <path fill-rule="evenodd"
+                                d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 012.496-.336 9.554 9.554 0 012.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"
+                                clip-rule="evenodd"></path>
+                        </svg></div>
+                </a><a href="https://react-burger-app-maker.firebaseapp.com/" target="_blank" rel="noopener noreferrer">
+                    <div class="sc-oefIU bfsfLR" style="color: rgb(30, 30, 30); transform: none;"><svg
+                            viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg" class="StyledIconBase-ea9ulj-0 duvCfz">
+                            <g data-name="Layer 2">
+                                <g data-name="external-link">
+                                    <path
+                                        d="M20 11a1 1 0 00-1 1v6a1 1 0 01-1 1H6a1 1 0 01-1-1V6a1 1 0 011-1h6a1 1 0 000-2H6a3 3 0 00-3 3v12a3 3 0 003 3h12a3 3 0 003-3v-6a1 1 0 00-1-1z">
+                                    </path>
+                                    <path
+                                        d="M16 5h1.58l-6.29 6.28a1 1 0 000 1.42 1 1 0 001.42 0L19 6.42V8a1 1 0 001 1 1 1 0 001-1V4a1 1 0 00-1-1h-4a1 1 0 000 2z">
+                                    </path>
+                                </g>
+                            </g>
+                        </svg></div>
+                </a>
+            </div>
+            <div class="project-img">
+                <img src="https://achiaga.now.sh/static/media/burger-app.ac5d38f7.png" alt="burger-app">
+            </div>
+            <div class="project-content">
+                <h4>BurgerApp</h4>
+                <p>My first project in Reactjs from an online bootcamp. It is a web where you
+                    can make your own burguer and purchase it.</p>
+                <div class="tag1">
+                    <span><span class="pink">#</span>React&nbsp;</span>
+                    <span><span class="pink">#</span>Redux&nbsp;</span>
+                    <span><span class="pink">#</span>graphql&nbsp;</span>
+                </div>
+                <div class="tag2">
+                    <span><span class="pink">#</span>Firebase&nbsp;</span>
+                    <span><span class="pink">#</span>Material-ui&nbsp;</span>
+                </div>
+            </div>
+        </div>
+        <div class="single-project">
+            <div class="project-links">
+                <a href="https://github.com/Achiaga/myBurgerApp" target="_blank" rel="noopener noreferrer">
+                    <div class="sc-oefIU bfsfLR" style="color: rgb(30, 30, 30); transform: none;"><svg
+                            viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg" class="StyledIconBase-ea9ulj-0 duvCfz">
+                            <path fill-rule="evenodd"
+                                d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 012.496-.336 9.554 9.554 0 012.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"
+                                clip-rule="evenodd"></path>
+                        </svg></div>
+                </a><a href="https://react-burger-app-maker.firebaseapp.com/" target="_blank" rel="noopener noreferrer">
+                    <div class="sc-oefIU bfsfLR" style="color: rgb(30, 30, 30); transform: none;"><svg
+                            viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg" class="StyledIconBase-ea9ulj-0 duvCfz">
+                            <g data-name="Layer 2">
+                                <g data-name="external-link">
+                                    <path
+                                        d="M20 11a1 1 0 00-1 1v6a1 1 0 01-1 1H6a1 1 0 01-1-1V6a1 1 0 011-1h6a1 1 0 000-2H6a3 3 0 00-3 3v12a3 3 0 003 3h12a3 3 0 003-3v-6a1 1 0 00-1-1z">
+                                    </path>
+                                    <path
+                                        d="M16 5h1.58l-6.29 6.28a1 1 0 000 1.42 1 1 0 001.42 0L19 6.42V8a1 1 0 001 1 1 1 0 001-1V4a1 1 0 00-1-1h-4a1 1 0 000 2z">
+                                    </path>
+                                </g>
+                            </g>
+                        </svg></div>
+                </a>
+            </div>
+            <div class="project-img">
+                <img src="https://achiaga.now.sh/static/media/burger-app.ac5d38f7.png" alt="burger-app">
+            </div>
+            <div class="project-content">
+                <h4>BurgerApp</h4>
+                <p>My first project in Reactjs from an online bootcamp. It is a web where you
+                    can make your own burguer and purchase it.</p>
+                <div class="tag1">
+                    <span><span class="pink">#</span>React&nbsp;</span>
+                    <span><span class="pink">#</span>Redux&nbsp;</span>
+                    <span><span class="pink">#</span>graphql&nbsp;</span>
+                </div>
+                <div class="tag2">
+                    <span><span class="pink">#</span>Firebase&nbsp;</span>
+                    <span><span class="pink">#</span>Material-ui&nbsp;</span>
+                </div>
+            </div>
+        </div>
+        <div class="single-project">
+            <div class="project-links">
+                <a href="https://github.com/Achiaga/myBurgerApp" target="_blank" rel="noopener noreferrer">
+                    <div class="sc-oefIU bfsfLR" style="transform: none;"><svg viewBox="0 0 24 24" aria-hidden="true"
+                            focusable="false" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                            class="StyledIconBase-ea9ulj-0 duvCfz">
+                            <path fill-rule="evenodd"
+                                d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 012.496-.336 9.554 9.554 0 012.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"
+                                clip-rule="evenodd"></path>
+                        </svg></div>
+                </a><a href="https://react-burger-app-maker.firebaseapp.com/" target="_blank" rel="noopener noreferrer">
+                    <div class="sc-oefIU bfsfLR" style="transform: none;"><svg viewBox="0 0 24 24" aria-hidden="true"
+                            focusable="false" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                            class="StyledIconBase-ea9ulj-0 duvCfz">
+                            <g data-name="Layer 2">
+                                <g data-name="external-link">
+                                    <path
+                                        d="M20 11a1 1 0 00-1 1v6a1 1 0 01-1 1H6a1 1 0 01-1-1V6a1 1 0 011-1h6a1 1 0 000-2H6a3 3 0 00-3 3v12a3 3 0 003 3h12a3 3 0 003-3v-6a1 1 0 00-1-1z">
+                                    </path>
+                                    <path
+                                        d="M16 5h1.58l-6.29 6.28a1 1 0 000 1.42 1 1 0 001.42 0L19 6.42V8a1 1 0 001 1 1 1 0 001-1V4a1 1 0 00-1-1h-4a1 1 0 000 2z">
+                                    </path>
+                                </g>
+                            </g>
+                        </svg></div>
+                </a>
+            </div>
+            <div class="project-img">
+                <img src="https://achiaga.now.sh/static/media/burger-app.ac5d38f7.png" alt="burger-app">
+            </div>
+            <div class="project-content">
+                <h4>BurgerApp</h4>
+                <p>My first project in Reactjs from an online bootcamp. It is a web where you
+                    can make your own burguer and purchase it.</p>
+                <div class="tag1">
+                    <span><span class="pink">#</span>React&nbsp;</span>
+                    <span><span class="pink">#</span>Redux&nbsp;</span>
+                    <span><span class="pink">#</span>graphql&nbsp;</span>
+                </div>
+                <div class="tag2">
+                    <span><span class="pink">#</span>Firebase&nbsp;</span>
+                    <span><span class="pink">#</span>Material-ui&nbsp;</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a id="about"></a>
+    <div class="about">
+        <h1>About Me</h1>
+        <hr>
+    </div>
+    <div class="about-all">
+        <div class="img-container">
+            <img id="about-img" height="90%" width="90%" src="br img.png" alt="">
+        </div>
+        <p class="about-content">
+            <span>&lt;p&gt;</span><br>
+            I'm currently looking for new opportunities. I'm always open to new projects, ideas, job
+            opportunities and new connections. I love building new stuff so just send me a message and I will
+            answer you 100%.
+            <br><span>&lt;/p&gt;</span>
+        </p>
+        <p class="br">&lt;/br&gt;</p>
+        <p class="about-content">
+            <span>&lt;p&gt;</span><br>
+            I have a profound passion for programming and new technology. I love to learn new things and build
+            stuff. I studied Banking and Insurance although I always like computers, learning programming started
+            as a hobby, until I decided to make the big step and change my whole career into programming.
+            <br><span>&lt;/p&gt;</span>
+        </p>
+        <p class="br">&lt;/br&gt;</p>
+        <p class="about-content">
+            <span>&lt;p&gt;</span><br>
+            I don't like to quit. Once I start something I finish it, so instead of dropping out of college to
+            pursue my dream of being a programmer, I decided to finish my Banking and Insurance degree while
+            pursue my dream of being a programmer, I decided to finish my Banking and Insurance degree while
+            learning and working as a programmer.
+            <br><span>&lt;/p&gt;</span>
+        </p>
+        <p class="br">&lt;/br&gt;</p>
+        <p class="about-content">
+            <span>&lt;p&gt;</span><br>
+            My preferable area is frontend using Javascript, I love how Javascript makes it so easy to improve the
+            user's experience. As an engineer, I like UX and the balance between UI and UX. I love to build nice
+            looking easy to use responsive web sites. I don't mind getting my hands on other areas if needed
+            like backend but my area of expertise is frontend.
+            <br><span>&lt;/p&gt;</span>
+        </p>
+        <p class="br">&lt;/br&gt;</p>
+        <p class="about-content">
+            <span>&lt;p&gt;</span><br>
+            Switching carrers is the best decision I have ever made and I am so happy with it. I am a happy
+            person who enjoys work. So my dream company would be one with a really good enviroment with my
+            coworkers.
+            <br><span>&lt;/p&gt;</span>
+        </p>
+    </div>
+    <div class="end-title">
+        <p>'All these projects are powered by a lot of ☕️'</p>
+    </div>
+    <div class="left">
+        <a href="" target="_blank"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg" class="StyledIconBase-ea9ulj-0 duvCfz">
+                <path
+                    d="M8.267 14.68c-.184 0-.308.018-.372.036v1.178c.076.018.171.023.302.023.479 0 .774-.242.774-.651 0-.366-.254-.586-.704-.586zm3.487.012c-.2 0-.33.018-.407.036v2.61c.077.018.201.018.313.018.817.006 1.349-.444 1.349-1.396.006-.83-.479-1.268-1.255-1.268z">
+                </path>
+                <path
+                    d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6zM9.498 16.19c-.309.29-.765.42-1.296.42a2.23 2.23 0 01-.308-.018v1.426H7v-3.936A7.558 7.558 0 018.219 14c.557 0 .953.106 1.22.319.254.202.426.533.426.923-.001.392-.131.723-.367.948zm3.807 1.355c-.42.349-1.059.515-1.84.515-.468 0-.799-.03-1.024-.06v-3.917A7.947 7.947 0 0111.66 14c.757 0 1.249.136 1.633.426.415.308.675.799.675 1.504 0 .763-.279 1.29-.663 1.615zM17 14.77h-1.532v.911H16.9v.734h-1.432v1.604h-.906V14.03H17v.74zM14 9h-1V4l5 5h-4z">
+                </path>
+            </svg></a>
+        <a href="https://www.linkedin.com/in/alfonso-achiaga/" target="_blank"><svg viewBox="0 0 24 24"
+                aria-hidden="true" focusable="false" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                class="StyledIconBase-ea9ulj-0 duvCfz">
+                <path
+                    d="M20 3H4a1 1 0 00-1 1v16a1 1 0 001 1h16a1 1 0 001-1V4a1 1 0 00-1-1zM8.339 18.337H5.667v-8.59h2.672v8.59zM7.003 8.574a1.548 1.548 0 110-3.096 1.548 1.548 0 010 3.096zm11.335 9.763h-2.669V14.16c0-.996-.018-2.277-1.388-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248h-2.667v-8.59h2.56v1.174h.037c.355-.675 1.227-1.387 2.524-1.387 2.704 0 3.203 1.778 3.203 4.092v4.71z">
+                </path>
+            </svg></a>
+        <a href=""><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg" class="StyledIconBase-ea9ulj-0 duvCfz">
+                <path fill="none" d="M0 0h24v24H0V0z"></path>
+                <path d="M20 8l-8 5-8-5v10h16zm0-2H4l8 4.99z" opacity="0.3"></path>
+                <path
+                    d="M4 20h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2zM20 6l-8 4.99L4 6h16zM4 8l8 5 8-5v10H4V8z">
+                </path>
+            </svg></a>
+        <a href="" target="_blank"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg" class="StyledIconBase-ea9ulj-0 duvCfz">
+                <path fill-rule="evenodd"
+                    d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 012.496-.336 9.554 9.554 0 012.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"
+                    clip-rule="evenodd"></path>
+            </svg></a>
+        <hr>
+    </div>
+    <div class="right">
+        <p>Thank you for your visit!</p>
+        <hr>
+    </div>
+    <div class="footer">
+        <p>Made with <span style="color: rgb(167, 4, 4); font-size: 1.2rem">&hearts;</span> By Burair Abbas</p>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
