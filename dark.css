@@ -688,10 +688,12 @@ box-shadow: rgba(0, 0, 0, 0.2) 4px 6px 10px;
 .img-container{
   display: flex;
   justify-content: center;
-  margin-left: 16rem;
+  margin-left: 20rem;
   margin-bottom: 2rem;
   border-radius: 50%;
   overflow: hidden;
+  width: 50%;
+  height: 50%;
 }
 
 .img-container img{
@@ -728,6 +730,7 @@ box-shadow: rgba(0, 0, 0, 0.2) 4px 6px 10px;
   display: flex;
   align-items: center;
   margin-top: 2rem;
+  margin-left: 12rem;
 }
 
 .about-all {

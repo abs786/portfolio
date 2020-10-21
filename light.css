@@ -693,16 +693,18 @@ details[open] summary ~ * {
 .img-container{
    display: flex;
    justify-content: center;
-   margin-left: 16rem;
+   margin-left: 20rem;
    margin-bottom: 2rem;
    border-radius: 50%;
    overflow: hidden;
+   width: 50%;
+   height: 50%;
 }
 
 .img-container img{
    border-radius: 50%;
    margin-top:1rem;
-   margin-bottom: -4rem;
+   margin-bottom: -5.5rem;
    box-shadow: 10px 10px 55px rgba(0, 0, 0, 0.3);
   animation-timing-function: ease-in-out;
 }

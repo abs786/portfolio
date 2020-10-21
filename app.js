@@ -1,19 +1,16 @@
 // ------------------------------ Change Mode ----------------------------
-function toggleMode(url, mode) {
-    var stylesheet = document.getElementById("stylesheet");
-    var btn = document.getElementById("btn");
-    stylesheet.setAttribute('href', url);
-    if (mode === 'dark') {
-        var light = `toggleMode('light.css','light')`;
-        btn.setAttribute('onclick', light);
+function changeMode(){
+    if(window.localStorage.getItem('mode') === 'light.css'){
+        window.localStorage.setItem('mode','dark.css');
+        $("#stylesheet").attr("href", window.localStorage.getItem('mode'));
         $("#introo").css('color', 'palevioletred');
         $("#experiences").css('color', '#fafafa');
         $("#skillss").css('color', '#fafafa');
         $("#projectss").css('color', '#fafafa');
         $("#aboutt").css('color', '#fafafa');
     } else {
-        var dark = `toggleMode('dark.css', 'dark')`;
-        btn.setAttribute('onclick', dark);
+        window.localStorage.setItem('mode','light.css');
+        $("#stylesheet").attr("href", window.localStorage.getItem('mode'));
         $("#introo").css('color', 'rgb(223, 30, 94)');
         $("#experiences").css('color', 'black');
         $("#skillss").css('color', 'black');
@@ -24,6 +21,12 @@ function toggleMode(url, mode) {
 
 // ----------------------- Light/Dark Mode Button Animation -------------------------
 const btn = document.getElementById('btn');
+
+if(window.localStorage.getItem('mode') === 'light.css'){
+    btn.classList.remove('btn--checked');
+} else {
+    btn.classList.add('btn--checked');
+}
 
 btn.addEventListener('click', () => {
     btn.classList.toggle('btn--checked');
@@ -48,6 +51,10 @@ function changeTab(evt, contentName) {
 
 // ------------------------------ JQuery Scroll Animation -------------------------------
 $(document).ready(function () {
+    if(!window.localStorage.getItem('mode')) {
+        window.localStorage.setItem('mode','light.css');
+    }
+    $("#stylesheet").attr("href", window.localStorage.getItem('mode'));
     var scroll_pos = 0;
     $(document).scroll(function () {
         scroll_pos = $(this).scrollTop();
